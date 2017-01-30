@@ -1,13 +1,9 @@
-/*
-Defines AppModule, the root module that tells Angular how to assemble the application. 
-Right now it declares only the AppComponent. 
-Soon there will be more components to declare. 
-*/
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 
 import { AppComponent }  from './app.component';
+import { HeroDetailComponent } from './hero-detail.component';
 
 @NgModule({
   imports: [
@@ -15,7 +11,8 @@ import { AppComponent }  from './app.component';
     FormsModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroDetailComponent
   ],
   bootstrap: [ AppComponent ]
 })
