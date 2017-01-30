@@ -1,20 +1,10 @@
-/*
-Defines the same AppComponent as the one in the QuickStart playground. 
-It is the root component of what will become a tree of nested components as the application evolves. 
-*/
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 
-=======
->>>>>>> 715d268deda5b8a284a6b3c29e4db8d12cf717bb
 export class Hero {
   id: number;
   name: string;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 715d268deda5b8a284a6b3c29e4db8d12cf717bb
 const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice' },
   { id: 12, name: 'Narco' },
@@ -27,10 +17,7 @@ const HEROES: Hero[] = [
   { id: 19, name: 'Magma' },
   { id: 20, name: 'Tornado' }
 ];
-<<<<<<< HEAD
 
-=======
->>>>>>> 715d268deda5b8a284a6b3c29e4db8d12cf717bb
 @Component({
   selector: 'my-app',
   template: `
@@ -102,15 +89,10 @@ const HEROES: Hero[] = [
     }
   `]
 })
-<<<<<<< HEAD
-=======
-// ROOT .... public properties in AppComponent 
->>>>>>> 715d268deda5b8a284a6b3c29e4db8d12cf717bb
 export class AppComponent {
   title = 'Tour of Heroes';
   heroes = HEROES;
   selectedHero: Hero;
-<<<<<<< HEAD
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
@@ -123,9 +105,3 @@ Copyright 2016 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
 */
-=======
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
-}
->>>>>>> 715d268deda5b8a284a6b3c29e4db8d12cf717bb
