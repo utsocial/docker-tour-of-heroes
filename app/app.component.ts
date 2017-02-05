@@ -69,7 +69,7 @@ import { HeroService } from './hero.service';
   providers: [HeroService]
 })
 export class AppComponent implements OnInit {
-  title = 'Tour of Heroes';
+  title = 'Tour of Heroes (services)...!!';
   heroes: Hero[];
   selectedHero: Hero;
 
