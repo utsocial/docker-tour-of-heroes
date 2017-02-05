@@ -69,20 +69,28 @@ import { HeroService } from './hero.service';
   providers: [HeroService]
 })
 export class AppComponent implements OnInit {
-  title = 'Tour of Heroes (services)';
+  title = 'Tour of Heroes (services OK	)';
   heroes: Hero[];
   selectedHero: Hero;
 
   constructor(private heroService: HeroService) { }
 
   getHeroes(): void {
-    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+    //this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+	this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
   }
 
+  /*
+	Angular calls lifecycle hook methods on directives and components 
+	as it creates, changes, and destroys them.
+	We write an ngOnInit method with our initialization logic inside 
+		and leave it to Angular to call it at the right time. 
+		In our case, we initialize by calling getHeroes.
+  */
   ngOnInit(): void {
     this.getHeroes();
   }
-
+  // This method is trigger via DOM from the template ...
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
